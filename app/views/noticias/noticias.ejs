@@ -14,14 +14,12 @@
 		<tr>
 			<td>ID</td>
 			<td>Título</td>
-			<td>Notícia</td>
 		</tr>
 		<% for(i = 0; i < noticias.length; i++) { %>
 		<tr>
 			<% var noticia = noticias[i]; %>
 			<td><%= noticia.id_noticia %></td>
 			<td><%= noticia.titulo %></td>
-			<td><%= noticia.noticia %></td>
 		</tr>
 		<% } %>
 	</table>
