@@ -10,6 +10,9 @@ app.set('view engine', 'ejs');
 // como inclusão do módulo 'server' é feita no app, então o caminho é relativo ao 'app.js'
 app.set('views', './app/views');
 
+ // define como diretório estático o /app/public, com CSS, JS e o que mais for estático,
+ // deixando-os disponíveis para as páginas
+app.use(express.static('./app/public'));
 // configuração do middleware body-parser para tratar urls codificadas
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
