@@ -21,6 +21,7 @@ consign()
     // vai pensar que é diretório com arquivos JS
     .then('config/dbConnection.js')
     .then('app/models')
+    .then('app/controllers')
     .into(app);
 
 module.exports = app;
